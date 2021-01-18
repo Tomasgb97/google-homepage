@@ -38,11 +38,6 @@
          margin-top:  10px;
          color: #ffffff;
      }
-     #botonesdebusqueda:hover{
-
-         border: dodgerblue;
-
-     }
      
      #barrabusqueda{
 
@@ -50,14 +45,22 @@
          justify-content: center;
          margin: auto;
          width: 70vh;
-         height: 3vh;
+         height: 4vh;
          border-radius: 50px;
          border-width: 1px;
+         text-indent: 20px;
+         padding: 1px 40px;
 
      }
-     #barradebusqueda:hover{
-         box-shadow: 10px 10px 10px rgb(0, 0, 0);
+     #barrabusqueda:focus{
+         outline: 0px;
      }
+     #barrabusqueda:hover{
+
+        box-shadow: 0px 2px 5px 1px rgba(160, 160, 160, 0.836)
+     }
+     
+     
      #yofoto{
 
          border-radius: 50%;
@@ -145,6 +148,22 @@
      .links:hover{
          text-decoration: underline;
      }
+     #lupita{
+         position: absolute;
+         margin-left: 350px;
+         margin-top: 6px;
+         background-color: transparent;
+         height: 30px;
+         width: 30px;
+     }
+     #microfono{
+         position: absolute;
+         background-color: transparent;
+         height: 25px;
+         width: 25px;
+         margin-left: 974px;
+         margin-top: 5px;
+     }
 </style>
 <nav>
     <div id="navbar">
@@ -156,7 +175,13 @@
 <body>
 <main>
 <img src="media/googlelogo_color_272x92dp.png" alt="Google logo" id="googlelogo">
-<input type="search..." id="barrabusqueda">
+<div>
+    <img id=lupita src="media/lupa.png" alt="lupita">
+</div>
+<img id="microfono" src="media/microfono.png" alt="">
+<div>
+    <input style="padding-left: 30px;" type="search..." id="barrabusqueda">
+</div>
 <div name="botones de busqueda" id="botonesdebusqueda">
     <button class="button">Buscar con Google</button>
     <button class="button">Me siento con suerte</button>
