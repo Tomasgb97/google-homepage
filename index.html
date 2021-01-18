@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<style>
+    .button{
+
+        box-shadow: rgba(2, 2, 2, 0.548);
+        border: none;
+        border-radius: 3px;
+    
+        
+    }
+    .button:hover{
+        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24)
+    }
+    .button:focus{
+
+        outline: 0px;
+    }
+    #botones{
+        background-color: #f8f9fa;
+        border: 2px;
+        border-radius: 1px;
+        border-color: grey;
+    }
+    #googlelogo { 
+        width: 400px;
+        height: 300;
+        display: block;
+        margin: auto;
+        margin-top: 30vh;
+
+     }
+     #botonesdebusqueda{
+         padding: 10vh, 10vh, 10vh, 10vh;
+         display: flex;
+         width: 300px;;
+         height: 35px;
+         justify-content: space-around;
+         margin:auto;
+         margin-top:  10px;
+         color: #ffffff;
+     }
+     
+     
+     
+     #yofoto{
+
+         border-radius: 50%;
+         width: 5vh;
+         height: 5vh;
+     }
+     #navbar{
+         display: flex;
+         justify-content: flex-end;
+         flex-direction: row;
+         width: auto;
+         align-items: center;
+         padding-right: 10px;
+     }
+     #navbar a{
+         margin: 5px 5px;
+         color: rgb(0, 0, 0);
+         font-size: 13px;
+         font-family: Arial, sans-serif;
+      
+     }
+     #ofrecidopor{
+
+         font-family: Arial, sans-serif;
+         display: flex;
+         justify-content: center;
+         text-decoration: none;
+     }
+     #ofrecidopor a{
+         color: blue;
+         font-family: Arial,sans-serif;
+     }
+     #footer1{
+         display: inline !important;
+         text-align: left !important;
+         
+         color:rgba(0, 0, 0, 0.548)}
+
+     #footerargentina{
+
+         display: flex;
+        padding-left: 30px;
+        padding-bottom: 5px;
+         justify-content: left;
+         background-color:#F2F2F2;
+         border: 1px;
+         height: 4vh;
+         margin: auto;
+         font-family: Arial, sans-serif;
+         font-size: 13px;
+         margin-top: 225px;
+         color: rgba(0, 0, 0, 0.548);
+         border-top: 1px solid rgb(218, 220, 224);
+         border-bottom: 1px solid  rgb(218, 220, 224);
+         
+     }
+
+     #footerdos{
+         display: flex;
+         background-color: #F2F2F2;
+         font-family: Arial, "Helvetica Neue", sans-serif;
+         justify-content: space-between;
+         height: 4vh;
+        text-align: center;
+        padding-top: 15px;
+        margin-top: 0px;
+        font-size: 13.3px;
+        color: rgba(0, 0, 0, 0.548)
+        }   
+        #footerdos a{
+
+            margin-left: 13px;
+            margin-right: 13px;
+        
+        }
+    
+     
+     body{
+         margin: 0px !important;
+         padding: 0px;
+     }
+     .links{
+         text-decoration: none;
+     }
+     .links:hover{
+         text-decoration: underline;
+     }
+     #locacion{
+
+         display: flex;
+         justify-content: space-between;
+         background-color: transparent;
+         border: 1px solid rgba(219, 217, 217, 0.801);
+         border-radius: 30px;
+         width: 550px;
+         height: 40px;
+         margin: auto;
+        
+     }
+     #locacion:hover{
+
+        box-shadow: 0px 2px 5px 1px rgba(160, 160, 160, 0.836);
+     }
+
+     #searchbar{
+         width: 85%;
+         border: 0px;
+     }
+     #searchbar:focus{
+         outline: 0px;
+     }
+    
+     .iconos{
+         margin: auto;
+         height: 25px;
+         width: 25px;
+     }
+     
+</style>
+<nav>
+    <div id="navbar">
+        <a href="https://www.google.com/intl/es-419/gmail/about/" class="links">Gmail</a>
+        <a href="https://www.google.com/search?q=google+imagenes+google&client=ubuntu&hs=idJ&sxsrf=ALeKk00eVWbYHkDT173-TtHQLy3TrOtpHw:1611000187896&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi1ybqvo6buAhWHHLkGHfO2DlMQ_AUoAXoECAYQAw&biw=1920&bih=913" class="links">imagenes</a>
+        <a href="https://github.com/Tomasgb97">
+            <img src="media/unnamed.jpg" alt="yo" id="yofoto"></a>
+    </div>
+</nav>
+<body>
+<main>
+<img src="media/googlelogo_color_272x92dp.png" alt="Google logo" id="googlelogo">
+<div id="locacion">
+    <img class="iconos" src="media/lupa.png" alt="">
+    <input id="searchbar" type="search">
+    <img class="iconos" src="media/microfono.png" alt="">
+</div>
+
+<div name="botones de busqueda" id="botonesdebusqueda">
+    <button class="button">Buscar con Google</button>
+    <button class="button">Me siento con suerte</button>
+</div>
+<div id="ofrecidopor">
+<p>Ofrecido por Google en: <a class="links">English</a><a class="links" style="margin-left: 13px;">Español (Latinoamérica)</a></p>
+
+</div>
+</main>
+<footer>
+<div id="footerargentina">
+    <p id="footer1">Argentina</p>
+</div>
+
+<div id="footerdos">
+    <div style="justify-content: flex-start;">
+    <a class="links">Publicidad</a>
+    <a class="links">Negocios</a>
+    <a class="links">Sobre Google</a>
+    <a class="links">Como funciona la Busqueda</a>
+    </div>
+    <div>
+    <a class="links">Privacidad</a>
+    <a class="links">Condiciones</a>
+    <a class="links">Preferencias</a>
+    </div>
+</div>
+</footer>
+</body>
