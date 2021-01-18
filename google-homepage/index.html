@@ -14,6 +14,10 @@
     .button:hover{
         box-shadow: 0 3px 3px 0 rgba(0,0,0,0.24)
     }
+    .button:focus{
+
+        outline: 0px;
+    }
     #botones{
         background-color: #f8f9fa;
         border: 2px;
@@ -39,26 +43,6 @@
          color: #ffffff;
      }
      
-     #barrabusqueda{
-
-         display: flex;
-         justify-content: center;
-         margin: auto;
-         width: 50vh;
-         height: 4vh;
-         border-radius: 50px;
-         border-width: 1px;
-         text-indent: 20px;
-         padding: 1px 40px;
-
-     }
-     #barrabusqueda:focus{
-         outline: 0px;
-     }
-     #barrabusqueda:hover{
-
-        box-shadow: 0px 2px 5px 1px rgba(160, 160, 160, 0.836)
-     }
      
      
      #yofoto{
@@ -111,7 +95,7 @@
          margin: auto;
          font-family: Arial, sans-serif;
          font-size: 13px;
-         margin-top: 36vh;
+         margin-top: 225px;
          color: rgba(0, 0, 0, 0.548);
          border-top: 1px solid rgb(218, 220, 224);
          border-bottom: 1px solid  rgb(218, 220, 224);
@@ -148,27 +132,42 @@
      .links:hover{
          text-decoration: underline;
      }
-     #lupita{
-         position: absolute;
-         margin-left: 710px;
-         margin-top: 5px;
+     #locacion{
+
+         display: flex;
+         justify-content: space-between;
          background-color: transparent;
-         height: 30px;
-         width: 30px;
+         border: 1px solid rgba(219, 217, 217, 0.801);
+         border-radius: 30px;
+         width: 550px;
+         height: 40px;
+         margin: auto;
+        
      }
-     #microfono{
-         position: absolute;
-         background-color: transparent;
+     #locacion:hover{
+
+        box-shadow: 0px 2px 5px 1px rgba(160, 160, 160, 0.836);
+     }
+
+     #searchbar{
+         width: 85%;
+         border: 0px;
+     }
+     #searchbar:focus{
+         outline: 0px;
+     }
+    
+     .iconos{
+         margin: auto;
          height: 25px;
          width: 25px;
-         margin-left: 1160px;
-         margin-top: 5px;
      }
+     
 </style>
 <nav>
     <div id="navbar">
-        <a href="" class="links">Gmail</a>
-        <a href="" class="links">imagenes</a>
+        <a href="https://www.google.com/intl/es-419/gmail/about/" class="links">Gmail</a>
+        <a href="https://www.google.com/search?q=google+imagenes+google&client=ubuntu&hs=idJ&sxsrf=ALeKk00eVWbYHkDT173-TtHQLy3TrOtpHw:1611000187896&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi1ybqvo6buAhWHHLkGHfO2DlMQ_AUoAXoECAYQAw&biw=1920&bih=913" class="links">imagenes</a>
         <a href="https://github.com/Tomasgb97">
             <img src="media/unnamed.jpg" alt="yo" id="yofoto"></a>
     </div>
@@ -176,13 +175,12 @@
 <body>
 <main>
 <img src="media/googlelogo_color_272x92dp.png" alt="Google logo" id="googlelogo">
-<div>
-    <img id=lupita src="media/lupa.png" alt="lupita">
+<div id="locacion">
+    <img class="iconos" src="media/lupa.png" alt="">
+    <input id="searchbar" type="search">
+    <img class="iconos" src="media/microfono.png" alt="">
 </div>
-<img id="microfono" src="media/microfono.png" alt="">
-<div>
-    <input style="padding-left: 30px;" type="search..." id="barrabusqueda">
-</div>
+
 <div name="botones de busqueda" id="botonesdebusqueda">
     <button class="button">Buscar con Google</button>
     <button class="button">Me siento con suerte</button>
